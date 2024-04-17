@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euclid</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container header__container">
+            <div class="container header__container flex">
                 <a href="#" class="header__logo">
                     <img src="./image/Logo.svg" alt="Logo">
                 </a>
                 <nav class="header__nav nav">
-                    <ul class="nav__list">
+                    <ul class="nav__list flex">
                         <li class="nav__item">
                             <a href="#about" class="nav__link">О&nbsp;нас</a>
                         </li>
@@ -43,12 +44,13 @@
         <main>
             <section class="hero" id="hero">
                 <div class="container">
-                    <div class="hero__content">
+                    <div class="hero__content hero__img flex">
                         <h1 class="hero__title">
                             Проектные решения любой сложности
                         </h1>
                         <p class="hero__descr">
-                            Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день
+                            Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей
+                            день
                             остаются уделом проектантов
                         </p>
                         <button class="btn btn-reset hero__btn">Заказать расчёт</button>
@@ -57,8 +59,9 @@
             </section>
             <section class="about" id="about">
                 <div class="container">
-                    <h2 class="about__title">О&nbsp;нас</h2>
-                    <p class="about__descr">Также как перспективное планирование создаёт необходимость включения
+                    <h2 class="about__title section-title">О&nbsp;нас</h2>
+                    <p class="about__descr section-descr">Также как перспективное планирование создаёт необходимость
+                        включения
                         в&nbsp;производственный план
                         целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих
                         по&nbsp;своей масштабности и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть
@@ -68,26 +71,38 @@
                         проекта предопределяет высокую востребованность позиций, занимаемых участниками в&nbsp;отношении
                         поставленных задач. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высококачественный
                         прототип будущего проекта способствует повышению качества экспериментов.</p>
-                    <div>
-                        <div class="about-card--left">
-                            <p class="about-card__descr">Принимая во&nbsp;внимание показатели успешности, перспективное
-                                планирование способствует
-                                подготовке и&nbsp;реализации новых принципов</p>
-                            <button class="btn about-card__btn">Подробнее</button>
-                        </div>
-                        <div class="about-card--right">
-                            <div class="about-content">
-                                <h3 class="about-content__title">Консультация с&nbsp;широким активом</h3>
-                                <p class="about-content__descr">А&nbsp;также свежий взгляд на&nbsp;привычные
-                                    вещи&nbsp;&mdash; безусловно открывает
-                                    новые горизонты для как самодостаточных, так и&nbsp;внешне зависимых концептуальных
-                                    решений</p>
+                    <div class="about-contents flex">
+                        <div class="about-contents--left flex">
+                            <div class="about-content flex">
+                                <p class="about-content__descr section-descr">Принимая во&nbsp;внимание показатели
+                                    успешности,
+                                    перспективное
+                                    планирование способствует
+                                    подготовке и&nbsp;реализации новых принципов</p>
+                                <button class="btn btn-reset about-card__btn">Подробнее</button>
                             </div>
-                            <div>
-                                <h3 class="about-content__title">В&nbsp;своём стремлении повысить</h3>
-                                <p class="about-content__descr">Качество жизни, они забывают, что сплочённость команды
-                                    профессионалов представляет
-                                    собой интересный эксперимент проверки прогресса профессионального сообщества</p>
+                        </div>
+                        <div class="about-contents--right flex">
+                            <div class="about-card about-card--cube flex">
+                                <div class="about-card__text">
+                                    <h3 class="about-card__title section-heading">Консультация с&nbsp;широким активом
+                                    </h3>
+                                    <p class="about-card__descr section-descr">А&nbsp;также свежий взгляд
+                                        на&nbsp;привычные
+                                        вещи&nbsp;&mdash; безусловно открывает
+                                        новые горизонты для как самодостаточных, так и&nbsp;внешне зависимых
+                                        концептуальных
+                                        решений</p>
+                                </div>
+                            </div>
+                            <div class="about-card about-card--tool flex">
+                                <div class="about-card__text">
+                                    <h3 class="about-card__title section-heading">В&nbsp;своём стремлении повысить</h3>
+                                    <p class="about-card__descr section-descr">Качество жизни, они забывают, что
+                                        сплочённость команды
+                                        профессионалов представляет
+                                        собой интересный эксперимент проверки прогресса профессионального сообщества</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -95,76 +110,80 @@
             </section>
             <section class="info" id="info">
                 <div class="container">
-                    <h2 class="info__title">Этапы</h2>
-                    <div class="info-left">
-                        <h3 class="info-consultation__title">Проводим консультацию</h3>
-                        <div class="info-consultation__text">
-                            <span class="info-consultation__descr">Влечёт за&nbsp;собой процесс внедрения
-                                и&nbsp;модернизации приоритизации разума над
-                                эмоциями.
-                                В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней
-                                политики
-                                будут объективно рассмотрены соответствующими инстанциями. </span>
-                            <span class="info-consultation__descr">
-                                А&nbsp;также представители современных социальных резервов, инициированные исключительно
-                                синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей
-                                картины, реплицированные с&nbsp;зарубежных источников, современные исследования
-                                подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить
-                                традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности
-                                картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
-                            </span>
+                    <h2 class="info__title section-title">Этапы</h2>
+                    <div class="info-card flex">
+                        <div class="info-card--left flex">
+                            <h3 class="info-card__title section-heading">Проводим консультацию</h3>
+                            <div class="info-card__text">
+                                <span class="info-card__descr section-descr">Влечёт за&nbsp;собой процесс внедрения
+                                    и&nbsp;модернизации приоритизации разума над
+                                    эмоциями.
+                                    В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней
+                                    политики
+                                    будут объективно рассмотрены соответствующими инстанциями. </span>
+                                <span class="info-card__descr section-descr">
+                                    А&nbsp;также представители современных социальных резервов, инициированные
+                                    исключительно
+                                    синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью
+                                    общей
+                                    картины, реплицированные с&nbsp;зарубежных источников, современные исследования
+                                    подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить
+                                    традиционное производство, нанотехнологии освещают чрезвычайно интересные
+                                    особенности
+                                    картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
+                                </span>
+                            </div>
+                            <div class="info-card__btn">
+                                <button class="btn btn-reset info-card__btn--orange">Подробнее</button>
+                                <button class="btn btn-reset info-card__btn--transparent">Договор</button>
+                            </div>
                         </div>
-                        <div class="info__btn">
-                            <button class="btn info__btn--orange">Подробнее</button>
-                            <button class="btn info__btn--transparent">Договор</button>
+                        <div class="info-card--right">
+                            <picture class="info-card__img">
+                                <source srcset="./image/info-768.jpg" media="(max-width: 900px)">
+                                <source srcset="./image/info-1024.jpg" media="(max-width: 1024px)">
+                                <img class="info-img" src="./image/info-right.jpg" alt="картинка">
+                            </picture>
                         </div>
-                    </div>
-                    <div class="info-right">
-                        <picture class="info-right__img">
-                            <source srcset="./image/info-768.jpg" media="(max-width: 900px)">
-                            <source srcset="./image/info-1024.jpg" media="(max-width: 1024px)">
-                            <img class="info-img" src="./image/info-right.jpg" alt="картинка">
-                        </picture>
                     </div>
                 </div>
             </section>
             <section class="questions" id="questions">
                 <div class="container">
-                    <h2 class="questions__title">Вопросы</h2>
-                    <ul class="questions__list">
+                    <h2 class="questions__title section-title">Вопросы</h2>
+                    <ul class="questions__list flex">
                         <li class="questions__item">
-                            <div class="question">
-                                <h3 class="question__title">Из&nbsp;чего формируется конечная стоимость проекта?
+                                <h3 class="question__title section-heading">Из&nbsp;чего формируется конечная стоимость
+                                    проекта?
                                 </h3>
-                                <p class="question__descr">Приятно, граждане, наблюдать, как некоторые особенности
+                                <p class="question__descr section-descr">Приятно, граждане, наблюдать, как некоторые
+                                    особенности
                                     внутренней политики могут быть призваны к&nbsp;ответу.</p>
-                            </div>
                         </li>
                         <li class="questions__item">
-                            <div class="question">
-                                <h3 class="question__title">У&nbsp;меня есть свой проект. Можно&nbsp;ли его
+                                <h3 class="question__title section-heading">У&nbsp;меня есть свой проект. Можно&nbsp;ли
+                                    его
                                     реализовать?</h3>
-                                <p class="question__descr">А&nbsp;ещё некоторые особенности внутренней политики,
+                                <p class="question__descr section-descr">А&nbsp;ещё некоторые особенности внутренней
+                                    политики,
                                     которые представляют собой яркий пример континентального типа.</p>
-                            </div>
                         </li>
                         <li class="questions__item">
-                            <div class="question">
-                                <h3 class="question__title">Я&nbsp;выбираю между разными компаниями.
+                                <h3 class="question__title section-heading">Я&nbsp;выбираю между разными компаниями.
                                     Почему&nbsp;вы?</h3>
-                                <p class="question__descr">Явные признаки победы институционализации набирают
+                                <p class="question__descr section-descr">Явные признаки победы институционализации
+                                    набирают
                                     популярность среди определённых слоёв населения.</p>
-                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
         <footer class="footer" id="footer">
-            <div class="container footer__container">
-                <div class="footer__contacts">
+            <div class="container footer__container flex">
+                <div class="footer__contacts footer__calc flex">
                     <a href="#" class="footer__logo">
-                        <img src="./image/Logo.svg" alt="Logo">
+                        <img src="./image/Logofooter.svg" alt="Logo">
                     </a>
                     <nav class="footer__nav nav">
                         <ul class="nav__list">
@@ -191,7 +210,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <ul class="socials">
+                    <ul class="socials flex">
                         <li class="socials__item">
                             <a href="" class="socials__link socials__link-od">
                                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
@@ -217,9 +236,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__form">
+                <div class="footer__form footer__calc">
+                    <h2 class="footer__title">Оставить заявку</h2>
                     <form action="https://jsonplaceholder.typicode.com/posts" class="form" method="post">
-                        <div class="form__top">
+                        <div class="form__top flex">
                             <input class="form__input" type="text" name="name" placeholder="Фамилия, имя и отчество*"
                                 required>
                             <input class="form__input" type="email" name="email" placeholder="Email*" required>
@@ -236,8 +256,9 @@
                         </div>
                     </form>
                 </div>
-                <div class="footer__text">
-                    <p class="footer__text-descr">Высокий уровень вовлечения представителей целевой аудитории является
+                <div class="footer__text footer__calc">
+                    <p class="footer__text-descr section-descr">Высокий уровень вовлечения представителей целевой
+                        аудитории является
                         чётким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное
                         мышление позволяет оценить значение модели развития. Таким образом, консультация
                         с&nbsp;широким активом обеспечивает широкому кругу (специалистов) участие
